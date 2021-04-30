@@ -4,7 +4,7 @@ backend:
   media_folder: "_site/images/uploads"
   public_folder: "/images/uploads"
   media_library:
-  name: uploadcare
+   - name: uploadcare
   collections:
   - name: "posts"
     label: "Posts"
