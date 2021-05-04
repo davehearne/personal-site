@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": ".eleventy.js",
-  "dependencies": {},
+  "dependencies": {
+    "eleventy-plugin-sass": "^1.2.0"
+  },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "eleventy-google-fonts": "0.0.5"
   },
   "scripts": {
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "npm run sass -- --watch",
+    "start": "npm run sass && eleventy --serve ",
+    "sass": "sass --style=compressed scss/styles.scss _includes/css/styles.css",
     "test": "echo “Error: no test specified” && exit 1",
-    "build": "npx eleventy",
+    "build": "npm run sass && eleventy",
     "serve": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy"
   },

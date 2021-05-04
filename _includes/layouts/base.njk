@@ -1,11 +1,19 @@
 <html>
     <head>
-        <title>Dave Hearne</title>
+      {% eleventyGoogleFonts 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap' %}
+        <style>
+            {% include "css/styles.css" ignore missing %}
+            
+        </style>
+        <title>Dave Hearne :: Personal Site</title>
     </head>    
     <body>
-        <h1>
-            Hi, I'm Dave
-        </h1>
-        {{ content | safe }}
+        <div class = "main-content">
+        <div class = "main-content-heading">
+            <h1 >
+                {{title | safe}}
+            </h1>
+            {{ content | safe }}
+        </div>
     </body>
 </html>
