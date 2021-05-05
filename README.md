@@ -7,4 +7,3 @@
 * [Nunjucks](https://mozilla.github.io/nunjucks/)
 * [Sass](https://sass-lang.com/)
 * Running on [Netlify](https://www.netlify.com/)
-
