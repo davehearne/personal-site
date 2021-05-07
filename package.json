@@ -14,7 +14,7 @@
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
     "start": "npm run sass && eleventy --serve ",
-    "sass": "sass --style=compressed scss/styles.scss _includes/css/styles.css",
+    "sass": "sass --style=compressed scss/styles.scss _site/css/styles.css",
     "test": "echo “Error: no test specified” && exit 1",
     "build": "npm run sass && eleventy",
     "serve": "npx eleventy --serve",
